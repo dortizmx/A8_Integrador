@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A8DOM.MainPage">
+
+    <Grid Padding="5,0" RowSpacing="5" ColumnSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="screen" FontSize="40" FontAttributes="Bold" BackgroundColor="Black"
+               TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+               LineBreakMode="NoWrap" Grid.ColumnSpan="4" Text=""/>
+
+        <Button Grid.Row="1" Grid.Column="0" Text="AC" BackgroundColor="Gray" TextColor="White" Clicked="Click_Limpia" />
+        <Button Grid.Row="1" Grid.Column="1" Text="√" BackgroundColor="Gray" TextColor="White" />
+        <Button Grid.Row="1" Grid.Column="2" Text="%" BackgroundColor="Gray" TextColor="White" />
+        <Button Grid.Row="1" Grid.Column="3" Text="÷" BackgroundColor="Orange" TextColor="White" Clicked="Click_Operador"/>
+
+        <Button Grid.Row="2" Grid.Column="0" Text="7" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="2" Grid.Column="1" Text="8" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="2" Grid.Column="2" Text="9" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="2" Grid.Column="3" Text="*" BackgroundColor="Orange" TextColor="White" Clicked="Click_Operador"/>
+
+        <Button Grid.Row="3" Grid.Column="0" Text="4" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="3" Grid.Column="1" Text="5" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="3" Grid.Column="2" Text="6" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="3" Grid.Column="3" Text="-" BackgroundColor="Orange" TextColor="White" Clicked="Click_Operador"/>
+
+        <Button Grid.Row="4" Grid.Column="0" Text="3" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="4" Grid.Column="1" Text="2" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="4" Grid.Column="2" Text="1" BackgroundColor="DarkGray" TextColor="White" Clicked="Click_Numero"/>
+        <Button Grid.Row="4" Grid.Column="3" Text="+" BackgroundColor="Orange" TextColor="White" Clicked="Click_Operador"/>
+
+        
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="0" BackgroundColor="DarkGray" TextColor="White"/>
+        <Button Grid.Row="5" Grid.Column="2" Text="X2" BackgroundColor="DarkGray" TextColor="White"/>
+        <Button Grid.Row="5" Grid.Column="3" Text="=" BackgroundColor="Orange" TextColor="White" Clicked="Click_Resultado"/>
+      </Grid>
+
+
+</ContentPage>
